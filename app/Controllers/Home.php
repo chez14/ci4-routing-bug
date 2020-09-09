@@ -1,4 +1,6 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 class Home extends BaseController
 {
@@ -8,5 +10,9 @@ class Home extends BaseController
 	}
 
 	//--------------------------------------------------------------------
-
+	public function handle404()
+	{
+		echo "My Custom 404!";
+		return;
+	}
 }
